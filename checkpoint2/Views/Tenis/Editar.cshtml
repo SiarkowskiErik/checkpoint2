@@ -1,0 +1,15 @@
+﻿@model Tenis
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar Tenis</h1>
+
+<a asp-action="index" class="btn btn-info">Tenis</a>
+<form asp-action="Editar">
+
+    <partial name="_Formulario"></partial>
+
+    <botao texto="Editar"></botao>
+</form>

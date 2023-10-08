@@ -1,0 +1,28 @@
+﻿@model Tenis
+
+<div class="mb-3">
+    <label asp-for="Modelo"></label>
+    <input value="Modelo teste" asp-for="Modelo" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Marca"></label>
+    <input value="Marca teste" asp-for="Marca" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Numero"></label>
+    <input value="30" asp-for="Numero" class="form-control" />
+</div>
+<div class="mb-3">
+    <input asp-for="EmEstoque" />
+    <label asp-for="EmEstoque"></label>
+</div>
+<div class="mb-3">
+    <label asp-for="Preco"></label>
+    <input value="1200,30" asp-for="Preco" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Genero"></label>
+    <select asp-for="Genero" asp-items="@Html.GetEnumSelectList<GeneroTenis>()" class="form-select">
+        <option>Selecione</option>
+    </select>
+</div>

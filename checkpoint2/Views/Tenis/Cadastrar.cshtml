@@ -1,0 +1,17 @@
+﻿@model Tenis
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar</h1>
+
+<alert texto="@TempData["mensagem"]"></alert>
+
+<a asp-action="index" class="btn btn-info">Lista de tenis</a>
+<form asp-action="Cadastrar">
+
+    <partial name="_Formulario"></partial>
+
+    <botao></botao>
+</form>
